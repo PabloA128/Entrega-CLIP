@@ -1,5 +1,7 @@
 function Adivinanza(){
-    let entrada = document.getElementById(respuesta).value;
+    event.preventDefault
+    var entrada = document.getElementById('respuesta').value;
+    console.log(entrada)
     if (entrada == "CoronaVirus")
         respuesta = true
     else 
@@ -9,9 +11,10 @@ function Adivinanza(){
 }
 
 function ValidarIntentos(){
-    let intentos = Adivinanza()
+    var intentos = Adivinanza()
+    var perdio = true;
     if (intentos >= 4)
-        let perdio = true
+        perdio = true
     else
         perdio = false
 }
